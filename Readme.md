@@ -1,7 +1,9 @@
-# Traffic Sign Classification – COMP30027 Project 2 (2025)
+# Traffic Sign Classification – COMP30027 Project (2025)
 
 ## Project Overview
 This project focuses on classifying **German traffic signs** into one of **43 classes** using image features. The goal is to demonstrate **feature extraction, preprocessing, and machine learning** workflows for multi-class image classification.
+
+> Note: This project was completed as part of the Machine learning (COMP30027) course at the University of Melbourne.
 
 ---
 
@@ -33,6 +35,4 @@ This project focuses on classifying **German traffic signs** into one of **43 cl
 - **Libraries:** scikit-learn, numpy, pandas, matplotlib  
 - **Techniques:** Feature engineering, PCA, machine learning, ensemble modeling, evaluation metrics  
 
----
 
-> Note: This project was completed as part of the COMP30027 course at the University of Melbourne. Code and analysis have been adapted for portfolio presentation.
