@@ -1,58 +1,38 @@
-TRAFFIC SIGN CLASSIFICATION – COMP30027 PROJECT 2 (2025)
-=========================================================
+# Traffic Sign Classification – COMP30027 Project 2 (2025)
 
-Overview:
----------
-This project aims to classify German traffic signs into one of 43 classes using extracted features. 
+## Project Overview
+This project focuses on classifying **German traffic signs** into one of **43 classes** using image features. The goal is to demonstrate **feature extraction, preprocessing, and machine learning** workflows for multi-class image classification.
 
+---
 
-Directory Structure:
---------------------
-The project is organized as follows:
+## Data
+- **Training images:** 5,488 (with labels)  
+- **Test images:** 2,353 (without labels)  
+- **Classes:** 43 traffic sign types  
 
+### Features Provided
+- **HOG (Histogram of Oriented Gradients)** — PCA-reduced  
+- **Color histograms**  
+- **Additional features** — edge density, texture variance, mean RGB  
 
+---
 
-- train\
-    Folder with training image
-	- train_metadata.csv
-    		Metadata for training images (ids, image filenames and class labels)
-	- Features\
-    		Contains:
-      		- color_histogram.csv
-      		- hog_pca.csv
-      		- additional_features.csv
+## Methods
+1. **Data preprocessing** – normalization, feature selection  
+2. **Modeling** – trained and tuned classifiers including:
+   - Support Vector Machines (SVM)
+   - Random Forest
+   - Logistic Regression  
+3. **Stacking ensemble** – combined predictions from base models for improved accuracy  
+4. **Evaluation** – measured performance using accuracy and per-class F1 scores  
 
+---
 
-- test\
-    Folder with test images 
-	- test_metadata.csv
-    		Metadata for test images (ids, image filenames only, no labels)
-	- Features\
-    		Contains:
-      		- color_histogram.csv
-      		- hog_pca.csv
-      		- additional_features.csv
+## Skills & Tools
+- **Languages:** Python  
+- **Libraries:** scikit-learn, numpy, pandas, matplotlib  
+- **Techniques:** Feature engineering, PCA, machine learning, ensemble modeling, evaluation metrics  
 
-- README.txt
-    This file
+---
 
-Data:
------
-- 5488 training images with class labels
-- 2353 test images without labels
-- 43 total traffic sign classes
-- Provided features:
-    * HOG (Histogram of Oriented Gradients) - PCA reduced
-    * Color histograms
-    * Additional features (edge density, texture variance, mean RGB)
-
-
-Submission Format (Kaggle) (CSV):
-------------------------
-Final submission should follow this structure:
-
-Id,ClassId
-67.jpg,4
-94,2
-...
-521.jpg,12
+> Note: This project was completed as part of the COMP30027 course at the University of Melbourne. Code and analysis have been adapted for portfolio presentation.
